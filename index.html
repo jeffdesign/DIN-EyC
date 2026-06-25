@@ -145,6 +145,7 @@
         transition:
           opacity 0.8s ease,
           visibility 0.8s;
+        display: none;
       }
       #loader.hide {
         opacity: 0;
@@ -638,7 +639,7 @@
         margin-bottom: 28px;
         opacity: 0;
         transform: translateY(16px);
-        animation: fade-in 1s var(--ease) 1.6s forwards;
+        animation: fade-in 1s var(--ease) 0.2s forwards;
       }
       .hero-eline {
         width: 40px;
@@ -2480,26 +2481,26 @@
           </div>
           <div class="hero-h">
             <span class="sw"
-              ><span class="sl D delay-300">Investiga sospechas,</span></span
+              ><span class="sl D delay-80">Investiga sospechas,</span></span
             >
             <span class="sw"
-              ><span class="sl D delay-460"
+              ><span class="sl D delay-100"
                 >indicios o denuncias internas con evidencia y</span
               ></span
             >
             <span class="sw">
-              <span class="sl D delay-620"><em>confidencialidad</em> </span>
+              <span class="sl D delay-160"><em>confidencialidad</em> </span>
             </span>
           </div>
           <div class="hero-bottom-row">
             <div>
-              <p class="hero-sub fu delay-850">
+              <p class="hero-sub fu delay-80">
                 Identificamos la causa-raíz de irregularidades corporativas
                 mediante metodología forense. Brindamos respaldo experto y
                 seguridad técnica para empresas que priorizan la protección de
                 su integridad y una toma de decisiones informada.
               </p>
-              <div class="hero-ctas fu delay-1000">
+              <div class="hero-ctas fu delay-100">
                 <a class="btn-r" href="#contact">
                   Habla con un experto
                   <svg
@@ -2513,7 +2514,7 @@
                   </svg>
                 </a>
               </div>
-              <div class="hero-micro fu delay-1150">
+              <div class="hero-micro fu delay-160">
                 <svg
                   fill="none"
                   stroke="currentColor"
@@ -2525,7 +2526,7 @@
                 Tu información se trata con absoluta confidencialidad.
               </div>
               <div class="trust-row">
-                <div class="tbadge delay-900">
+                <div class="tbadge delay-100">
                   <div class="tbadge-icon">
                     <svg
                       fill="none"
@@ -2545,7 +2546,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="tbadge delay-1050">
+                <div class="tbadge delay-100">
                   <div class="tbadge-icon">
                     <svg
                       fill="none"
@@ -2564,7 +2565,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="tbadge delay-1200">
+                <div class="tbadge delay-100">
                   <div class="tbadge-icon">
                     <svg
                       fill="none"
@@ -2591,7 +2592,7 @@
                 <span class="strip-item">Int. Reputacional</span>
               </div>
             </div>
-            <div class="fu hero-urgency-stack delay-1300">
+            <div class="fu hero-urgency-stack delay-100">
               <!-- mini urgency card -->
               <div class="urgency-card">
                 <div class="urgency-label">¿Tienes una situación activa?</div>
@@ -3916,7 +3917,7 @@
             setTimeout(() => {
               loader?.classList.add("hide");
               triggerHeroAnimations();
-            }, 2000);
+            }, 600);
           });
         };
 
